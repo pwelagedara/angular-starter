@@ -11,12 +11,15 @@ import { Post } from '../../model/common.model';
 })
 export class PortalComponent implements OnInit {
 
+  private posts: Post[];
+
   constructor(private portalService: PortalService) { }
 
   ngOnInit() {
     this.portalService.getPosts().subscribe(
 		(response: Post[]) => {
-		  console.log(response);
+		  this.posts = response;
+		  console.log(this.posts);
 		},
 		(errResponse: Post[]) => {
 		    console.log('Error fetching Posts');

@@ -1,5 +1,6 @@
-<button mat-raised-button color="primary">Primary</button>
-<!-- 
-<p>
-  portal works!
-</p> -->
+<mat-list>
+  <div *ngFor="let post of posts;" >
+  	<mat-list-item>{{ post.title }} </mat-list-item>
+  	<mat-divider></mat-divider>
+  </div>
+</mat-list>
