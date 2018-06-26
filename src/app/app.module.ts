@@ -15,7 +15,7 @@ import { routing } from './app.routing';
   ],
   imports: [
     BrowserModule,
-	BrowserAnimationsModule,
+	  BrowserAnimationsModule,
     CoreModule.forRoot(),
     routing
   ],
