@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Router, Event, NavigationStart, NavigationEnd } from '@angular/router';
 
 import { AppConfig } from './app.config'
 
